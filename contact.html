@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weatherly - About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>☁</span> Weatherly
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="forecast.html">Forecast</a>
+        <a href="tips.html">Weather Tips</a>
+        <a href="contact.html" class="active">About</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-heading">
+
+        <p class="small-title">ABOUT THE PROJECT</p>
+
+        <h1>
+            Simple idea.<br>
+            <span>Useful information.</span>
+        </h1>
+
+        <p>
+            Weatherly is a simple weather information website
+            created as a web development project.
+        </p>
+
+    </section>
+
+
+    <section class="about-section">
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                ☁️
+            </div>
+
+            <h2>About Weatherly</h2>
+
+            <p>
+                Weatherly is designed to present weather information
+                in a simple, clean and user-friendly way.
+            </p>
+
+            <p>
+                The project uses HTML for structure, CSS for design
+                and JavaScript for interaction and decision making.
+            </p>
+
+        </div>
+
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                💻
+            </div>
+
+            <h2>Technologies Used</h2>
+
+            <div class="technology-list">
+
+                <div>
+                    <span>HTML</span>
+                    <small>Website Structure</small>
+                </div>
+
+                <div>
+                    <span>CSS</span>
+                    <small>Design & Responsive Layout</small>
+                </div>
+
+                <div>
+                    <span>JavaScript</span>
+                    <small>Interaction & Logic</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="contact-section">
+
+        <div class="contact-text">
+
+            <p class="small-title">GET IN TOUCH</p>
+
+            <h2>Have a question?</h2>
+
+            <p>
+                Fill out the form and send us a message.
+            </p>
+
+        </div>
+
+
+        <form id="contactForm">
+
+            <div class="input-group">
+
+                <label>Your Name</label>
+
+                <input
+                    type="text"
+                    id="userName"
+                    placeholder="Enter your name"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="userEmail"
+                    placeholder="Enter your email"
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>Message</label>
+
+                <textarea
+                    id="userMessage"
+                    rows="5"
+                    placeholder="Write your message..."
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="main-button">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>☁ Weatherly</p>
+
+    <p>Made as a student web development project</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

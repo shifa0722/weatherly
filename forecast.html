@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weatherly - Forecast</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <span>☁</span> Weatherly
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="forecast.html" class="active">Forecast</a>
+        <a href="tips.html">Weather Tips</a>
+        <a href="contact.html">About</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-heading">
+
+        <p class="small-title">WEATHER FORECAST</p>
+
+        <h1>Plan your week<br><span>with confidence.</span></h1>
+
+        <p>
+            Check the upcoming weather and plan your activities accordingly.
+        </p>
+
+    </section>
+
+
+    <section class="forecast-container">
+
+        <div class="forecast-top">
+
+            <div>
+                <p class="card-label">7 DAY FORECAST</p>
+                <h2>Mumbai, Maharashtra</h2>
+            </div>
+
+            <div class="location-icon">
+                📍
+            </div>
+
+        </div>
+
+
+        <div class="forecast-grid" id="forecastGrid">
+
+            <!-- JavaScript will add forecast cards here -->
+
+        </div>
+
+    </section>
+
+
+    <section class="weather-message">
+
+        <div class="message-icon">
+            🌦️
+        </div>
+
+        <div>
+            <h2>Weather at a glance</h2>
+            <p id="forecastMessage">
+                The week looks comfortable with a possibility of rain.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>☁ Weatherly</p>
+    <p>Made as a student web development project</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

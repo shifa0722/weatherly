@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly - Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span>☁</span> Weatherly
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="forecast.html">Forecast</a>
+            <a href="tips.html">Weather Tips</a>
+            <a href="contact.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <p class="small-title">WELCOME TO WEATHERLY</p>
+
+                <h1>
+                    Know your weather.<br>
+                    <span>Plan your day.</span>
+                </h1>
+
+                <p class="hero-description">
+                    A simple and beautiful weather dashboard made
+                    to help you understand today's weather quickly.
+                </p>
+
+                <a href="forecast.html" class="main-button">
+                    View Forecast →
+                </a>
+            </div>
+
+            <div class="weather-animation">
+                <div class="sun">☀️</div>
+                <div class="cloud">☁️</div>
+            </div>
+        </section>
+
+
+        <section class="search-section">
+
+            <h2>Check Your Weather</h2>
+            <p>Choose a city to see its weather information.</p>
+
+            <div class="search-box">
+                <select id="citySelect">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Nashik">Nashik</option>
+                </select>
+
+                <button id="checkWeather">
+                    Check Weather
+                </button>
+            </div>
+
+        </section>
+
+
+        <section class="current-weather">
+
+            <div class="weather-main-card">
+
+                <div>
+                    <p class="card-label">CURRENT WEATHER</p>
+
+                    <h2 id="cityName">Mumbai</h2>
+
+                    <div class="temperature">
+                        <span id="temperature">29</span>°C
+                    </div>
+
+                    <p id="condition">Partly Cloudy</p>
+                </div>
+
+                <div class="big-weather-icon" id="weatherIcon">
+                    🌤️
+                </div>
+
+            </div>
+
+
+            <div class="weather-details">
+
+                <div class="detail-card">
+                    <span>💧</span>
+                    <div>
+                        <p>Humidity</p>
+                        <h3 id="humidity">72%</h3>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <span>💨</span>
+                    <div>
+                        <p>Wind Speed</p>
+                        <h3 id="wind">14 km/h</h3>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <span>🌡️</span>
+                    <div>
+                        <p>Feels Like</p>
+                        <h3 id="feels">31°C</h3>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <span>☔</span>
+                    <div>
+                        <p>Rain Chance</p>
+                        <h3 id="rain">35%</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="quick-section">
+
+            <h2>What's happening today?</h2>
+
+            <div class="quick-cards">
+
+                <div class="info-card">
+                    <div class="info-icon">🌅</div>
+                    <h3>Morning</h3>
+                    <p>Comfortable weather with a cool breeze.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">☀️</div>
+                    <h3>Afternoon</h3>
+                    <p>Temperature may rise during the afternoon.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">🌙</div>
+                    <h3>Evening</h3>
+                    <p>Weather becomes cooler and pleasant.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>☁ Weatherly</p>
+        <p>@2026 | Made By Shifa Patel</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
